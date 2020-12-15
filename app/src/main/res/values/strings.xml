@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Andro</string>
+    <string-array name="items_class">
+        <item>iPhone</item>
+        <item>Samsung</item>
+    </string-array>
+
+    <string-array name="items_div_class_1">
+        <item>5</item>
+        <item>5S</item>
+        <item>SE</item>
+        <item>6</item>
+        <item>6+</item>
+        <item>6S</item>
+        <item>6S+</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="items_div_class_2">
+        <item>J530</item>
+        <item>A510</item>
+        <item>S10</item>
+        <item>S9</item>
+    </string-array>
+
+</resources>
