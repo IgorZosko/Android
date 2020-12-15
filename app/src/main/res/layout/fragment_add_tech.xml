@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTech">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:hint="Введіть назву" />
+
+        <EditText
+            android:id="@+id/model"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="77dp"
+            android:layout_weight="1"
+            android:hint="Введіть модель" />
+
+        <EditText
+            android:id="@+id/describe"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/model"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="91dp"
+            android:layout_weight="1"
+            android:hint="Введіть причину поломки"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/describe"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="90dp"
+            android:layout_weight="1"
+            android:hint="Вкажіть ціну" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="71dp"
+            android:text="Зберегти"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="45dp" />
+
+</RelativeLayout>
