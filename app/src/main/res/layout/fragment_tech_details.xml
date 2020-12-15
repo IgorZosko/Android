@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".techdetails.TechDetails">
+    <data>
+        <variable
+            name="TechDetailsViewModel"
+            type="com.example.techrepairs.techdetails.TechDetailsViewModel" />
+    </data>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contact_detail"
+        android:rowCount="1"
+        android:columnCount="1">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{TechDetailsViewModel.techName}"
+            android:textSize="26sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/model"
+            android:text="@{TechDetailsViewModel.techModel}"
+            android:textSize="26sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/describe"
+            android:text="@{TechDetailsViewModel.techDescribe}"
+            android:textSize="26sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:text="@{TechDetailsViewModel.techPrice}"
+            android:textSize="26sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"/>
+
+    </GridLayout>
+
+</layout>

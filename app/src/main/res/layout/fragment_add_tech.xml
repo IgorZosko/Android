@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <data>
+                <variable
+                    name="AddTechViewModel"
+                    type="com.example.techrepairs.addtech.AddTechViewModel" />
+        </data>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".addtech.AddTechFragment">
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1"
+                    android:text="@{AddTechViewModel.techName}"
+                    android:hint="Введіть назву" />
+
+
+                <EditText
+                    android:id="@+id/model"
+                    android:text="@{AddTechViewModel.techModel}"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="83dp"
+                    android:layout_weight="1"
+                    android:hint="Введіть модель" />
+
+                <EditText
+                    android:id="@+id/describe"
+                    android:layout_width="345dp"
+                    android:text="@{AddTechViewModel.techDescribe}"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/model"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="88dp"
+                    android:layout_weight="1"
+                    android:hint="Введіть опис поломки" />
+
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:layout_below="@id/describe"
+                    android:text="@{AddTechViewModel.techPrice}"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="87dp"
+                    android:layout_weight="1"
+                    android:hint="Введіть ціну" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="343dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/price"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="90dp"
+                    android:text="Зберегти"
+                    tools:layout_editor_absoluteX="219dp"
+                    tools:layout_editor_absoluteY="45dp" />
+
+        </RelativeLayout>
+</layout>
